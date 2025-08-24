@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portfolio - Desarrollador Web</title>
-    <!-- Enlace al CSS -->
+    <!-- CSS externo enlazado -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
         <nav class="container">
-            <div class="logo">Mi Portfolio</div>
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo Portfolio" class="logo-icon">
+                Mi Portfolio
+            </div>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre Mí</a></li>
@@ -35,20 +38,46 @@
         <div class="section-content container">
             <h2>Sobre Mí</h2>
             <div class="about-content">
-                <div class="profile-img">👨‍💻</div>
+                <div class="profile-img">
+                    <img src="images/profile-photo.jpg" alt="Foto de perfil" class="profile-photo">
+                </div>
                 <div class="about-text">
-                    <p>Soy un desarrollador web con más de 3 años de experiencia creando aplicaciones web modernas y responsivas...</p>
-                    <p>Mi pasión por el desarrollo web me lleva a estar constantemente aprendiendo...</p>
+                    <p>Soy un desarrollador web con más de 3 años de experiencia creando aplicaciones web modernas y responsivas. Me especializo en tecnologías frontend y backend, siempre buscando las mejores prácticas y soluciones innovadoras.</p>
+                    <p>Mi pasión por el desarrollo web me lleva a estar constantemente aprendiendo nuevas tecnologías y mejorando mis habilidades para ofrecer la mejor experiencia a los usuarios.</p>
                     
                     <div class="skills">
-                        <span class="skill">HTML5</span>
-                        <span class="skill">CSS3</span>
-                        <span class="skill">JavaScript</span>
-                        <span class="skill">React</span>
-                        <span class="skill">Node.js</span>
-                        <span class="skill">Python</span>
-                        <span class="skill">Git</span>
-                        <span class="skill">MongoDB</span>
+                        <span class="skill">
+                            <img src="images/icons/html5.png" alt="HTML5">
+                            HTML5
+                        </span>
+                        <span class="skill">
+                            <img src="images/icons/css3.png" alt="CSS3">
+                            CSS3
+                        </span>
+                        <span class="skill">
+                            <img src="images/icons/javascript.png" alt="JavaScript">
+                            JavaScript
+                        </span>
+                        <span class="skill">
+                            <img src="images/icons/react.png" alt="React">
+                            React
+                        </span>
+                        <span class="skill">
+                            <img src="images/icons/nodejs.png" alt="Node.js">
+                            Node.js
+                        </span>
+                        <span class="skill">
+                            <img src="images/icons/python.png" alt="Python">
+                            Python
+                        </span>
+                        <span class="skill">
+                            <img src="images/icons/git.png" alt="Git">
+                            Git
+                        </span>
+                        <span class="skill">
+                            <img src="images/icons/mongodb.png" alt="MongoDB">
+                            MongoDB
+                        </span>
                     </div>
                 </div>
             </div>
@@ -61,29 +90,44 @@
             <h2>Mis Proyectos</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>E-commerce Platform</h3>
-                    <p>Una plataforma de comercio electrónico completa...</p>
-                    <div class="project-links">
-                        <a href="#" class="project-link">Ver Demo</a>
-                        <a href="#" class="project-link">GitHub</a>
+                    <div class="project-image">
+                        <img src="images/projects/ecommerce-project.jpg" alt="E-commerce Platform">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Platform</h3>
+                        <p>Una plataforma de comercio electrónico completa desarrollada con React y Node.js. Incluye sistema de pagos, gestión de inventario y panel de administración.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Ver Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="project-card">
-                    <h3>Task Management App</h3>
-                    <p>Aplicación web para gestión de tareas con drag & drop...</p>
-                    <div class="project-links">
-                        <a href="#" class="project-link">Ver Demo</a>
-                        <a href="#" class="project-link">GitHub</a>
+                    <div class="project-image">
+                        <img src="images/projects/task-management.jpg" alt="Task Management App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>Aplicación web para gestión de tareas con funcionalidades de drag & drop, colaboración en tiempo real y notificaciones push.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Ver Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="project-card">
-                    <h3>Weather Dashboard</h3>
-                    <p>Dashboard interactivo del clima que muestra pronósticos...</p>
-                    <div class="project-links">
-                        <a href="#" class="project-link">Ver Demo</a>
-                        <a href="#" class="project-link">GitHub</a>
+                    <div class="project-image">
+                        <img src="images/projects/weather-dashboard.jpg" alt="Weather Dashboard">
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>Dashboard interactivo del clima que muestra pronósticos detallados, mapas meteorológicos y alertas en tiempo real usando APIs externas.</p>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Ver Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -95,18 +139,21 @@
         <div class="section-content container">
             <h2>Contacto</h2>
             <div class="contact-content">
-                <p>¿Tienes un proyecto en mente? Me encantaría escucharlo...</p>
+                <p>¿Tienes un proyecto en mente? Me encantaría escuchar sobre él y ver cómo podemos trabajar juntos para hacerlo realidad.</p>
                 
                 <div class="contact-info">
                     <div class="contact-item">
+                        <img src="images/icons/email.png" alt="Email">
                         <h3>Email</h3>
                         <p>tu.email@ejemplo.com</p>
                     </div>
                     <div class="contact-item">
+                        <img src="images/icons/linkedin.png" alt="LinkedIn">
                         <h3>LinkedIn</h3>
                         <p>linkedin.com/in/tu-perfil</p>
                     </div>
                     <div class="contact-item">
+                        <img src="images/icons/github.png" alt="GitHub">
                         <h3>GitHub</h3>
                         <p>github.com/tu-usuario</p>
                     </div>
@@ -119,32 +166,15 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 Mi Portfolio. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#"><img src="images/icons/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="images/icons/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="images/icons/facebook.png" alt="Facebook"></a>
+            </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script>
-        // Smooth scrolling para los enlaces de navegación
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Efecto parallax suave en el scroll
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const parallax = document.querySelector('.hero');
-            const speed = scrolled * 0.5;
-            parallax.style.transform = `translateY(${speed}px)`;
-        });
-    </script>
+    <!-- JavaScript externo enlazado -->
+    <script src="js/javascript.js"></script>
 </body>
 </html>
