@@ -3,178 +3,386 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portfolio - Desarrollador Web</title>
-    <!-- CSS externo enlazado -->
+    <title>Tu Nombre - Portfolio Personal</title>
+    <meta name="description" content="Portfolio personal de desarrollador web full stack">
+    <!-- CSS Variables y estilos -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav class="container">
-            <div class="logo">
-                <img src="images/logo.png" alt="Logo Portfolio" class="logo-icon">
-                Mi Portfolio
+    <!-- ======================== HEADER ======================== -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="nav-logo">
+                    <img src="img/profile.png" alt="Logo" class="logo-img">
+                    <span>Tu Portfolio</span>
+                </div>
+
+                <!-- Menu Hamburguesa -->
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <!-- Navegación -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#inicio" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#acerca" class="nav-link">Acerca de Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#habilidades" class="nav-link">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#proyectos" class="nav-link">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacto" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="hero">
+    <!-- ======================== MAIN ======================== -->
+    <main>
+        <!-- SECCIÓN INICIO/HERO -->
+        <section id="inicio" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Hola, soy <span class="highlight">Tu Nombre</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Desarrollador Web Full Stack especializado en crear experiencias digitales increíbles
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                        <a href="#contacto" class="btn btn-secondary">Contactar</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                     <div class="profile-circle">
+                         <img src="img/profile.png" alt="Tu foto de perfil" class="profile-photo">
+                     </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN ACERCA DE MÍ -->
+        <section id="acerca" class="about">
+            <div class="container">
+                <h2 class="section-title">Acerca de Mí</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Soy un desarrollador web apasionado con más de 3 años de experiencia 
+                            creando aplicaciones web modernas y responsivas. Me especializo en 
+                            tecnologías frontend y backend, siempre buscando las mejores prácticas 
+                            y soluciones innovadoras.
+                        </p>
+                        <p>
+                            Mi enfoque está en crear experiencias de usuario excepcionales, 
+                            código limpio y mantenible, y soluciones que realmente aporten 
+                            valor a los usuarios y empresas.
+                        </p>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <strong>Nombre:</strong> Tu Nombre Completo
+                            </div>
+                            <div class="info-item">
+                                <strong>Ubicación:</strong> Tu Ciudad, País
+                            </div>
+                            <div class="info-item">
+                                <strong>Email:</strong> tu.email@ejemplo.com
+                            </div>
+                            <div class="info-item">
+                                <strong>Experiencia:</strong> 3+ años
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                         <img src="img/profile.png" alt="Imagen personal" class="about-img">
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN HABILIDADES -->
+        <section id="habilidades" class="skills">
+            <div class="container">
+                <h2 class="section-title">Mis Habilidades</h2>
+                <div class="skills-content">
+                    <div class="skills-grid">
+                        <!-- Habilidad 1 -->
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <img src="img/icons/html5.png" alt="HTML5" class="skill-icon">
+                                <h3>HTML5</h3>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+
+                        <!-- Habilidad 2 -->
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <img src="img/icons/css3.png" alt="CSS3" class="skill-icon">
+                                <h3>CSS3</h3>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+
+                        <!-- Habilidad 3 -->
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <img src="img/icons/javascript.png" alt="JavaScript" class="skill-icon">
+                                <h3>JavaScript</h3>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+
+                        <!-- Habilidad 4 -->
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <img src="img/icons/react.png" alt="React" class="skill-icon">
+                                <h3>React</h3>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+
+                        <!-- Habilidad 5 -->
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <img src="img/icons/nodejs.png" alt="Node.js" class="skill-icon">
+                                <h3>Node.js</h3>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+
+                        <!-- Habilidad 6 -->
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <img src="img/icons/python.png" alt="Python" class="skill-icon">
+                                <h3>Python</h3>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN PROYECTOS -->
+        <section id="proyectos" class="projects">
+            <div class="container">
+                <h2 class="section-title">Mis Proyectos</h2>
+                <div class="projects-grid">
+                    <!-- Proyecto 1 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/projects/ecommerce-project.jpg" alt="E-commerce Platform">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" data-tooltip="Ver Demo">
+                                        <i class="icon-eye"></i>
+                                    </a>
+                                    <a href="#" class="project-link" data-tooltip="Ver Código">
+                                        <i class="icon-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce Platform</h3>
+                            <p>Plataforma completa de comercio electrónico desarrollada con React y Node.js. 
+                               Incluye sistema de pagos, gestión de inventario y panel de administración.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 2 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/projects/task-management.jpg" alt="Task Management App">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" data-tooltip="Ver Demo">
+                                        <i class="icon-eye"></i>
+                                    </a>
+                                    <a href="#" class="project-link" data-tooltip="Ver Código">
+                                        <i class="icon-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>Aplicación para gestión de tareas con funcionalidades de drag & drop, 
+                               colaboración en tiempo real y notificaciones push.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="img/projects/weather-dashboard.jpg" alt="Weather Dashboard">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" data-tooltip="Ver Demo">
+                                        <i class="icon-eye"></i>
+                                    </a>
+                                    <a href="#" class="project-link" data-tooltip="Ver Código">
+                                        <i class="icon-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Weather Dashboard</h3>
+                            <p>Dashboard interactivo del clima con pronósticos detallados, 
+                               mapas meteorológicos y alertas en tiempo real.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">API REST</span>
+                                <span class="tech-tag">Chart.js</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CONTACTO -->
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>¡Trabajemos juntos!</h3>
+                        <p>¿Tienes un proyecto en mente? Me encantaría escuchar sobre él y ver cómo podemos colaborar.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <img src="img/icons/email.png" alt="Email" class="contact-icon">
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <p>tu.email@ejemplo.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <img src="img/icons/linkedin.png" alt="LinkedIn" class="contact-icon">
+                                <div class="contact-text">
+                                    <h4>LinkedIn</h4>
+                                    <p>linkedin.com/in/tu-perfil</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <img src="img/icons/github.png" alt="GitHub" class="contact-icon">
+                                <div class="contact-text">
+                                    <h4>GitHub</h4>
+                                    <p>github.com/tu-usuario</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FORMULARIO DE CONTACTO -->
+                    <div class="contact-form">
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="nombre">Nombre *</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                                <span class="error-message" id="nombre-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="asunto">Asunto *</label>
+                                <input type="text" id="asunto" name="asunto" required>
+                                <span class="error-message" id="asunto-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje *</label>
+                                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                                <span class="error-message" id="mensaje-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-submit">
+                                    <span class="btn-text">Enviar Mensaje</span>
+                                    <span class="btn-loading">Enviando...</span>
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Mensaje de éxito/error -->
+                        <div id="form-message" class="form-message"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======================== FOOTER ======================== -->
+    <footer id="footer">
         <div class="container">
-            <h1>Hola, soy [Tu Nombre]</h1>
-            <p>Desarrollador Web Full Stack apasionado por crear experiencias digitales increíbles</p>
-            <a href="#proyectos" class="btn">Ver Mis Proyectos</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="sobre-mi" class="about">
-        <div class="section-content container">
-            <h2>Sobre Mí</h2>
-            <div class="about-content">
-                <div class="profile-img">
-                    <img src="images/profile-photo.jpg" alt="Foto de perfil" class="profile-photo">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Tu Nombre. Todos los derechos reservados.</p>
                 </div>
-                <div class="about-text">
-                    <p>Soy un desarrollador web con más de 3 años de experiencia creando aplicaciones web modernas y responsivas. Me especializo en tecnologías frontend y backend, siempre buscando las mejores prácticas y soluciones innovadoras.</p>
-                    <p>Mi pasión por el desarrollo web me lleva a estar constantemente aprendiendo nuevas tecnologías y mejorando mis habilidades para ofrecer la mejor experiencia a los usuarios.</p>
-                    
-                    <div class="skills">
-                        <span class="skill">
-                            <img src="images/icons/html5.png" alt="HTML5">
-                            HTML5
-                        </span>
-                        <span class="skill">
-                            <img src="images/icons/css3.png" alt="CSS3">
-                            CSS3
-                        </span>
-                        <span class="skill">
-                            <img src="images/icons/javascript.png" alt="JavaScript">
-                            JavaScript
-                        </span>
-                        <span class="skill">
-                            <img src="images/icons/react.png" alt="React">
-                            React
-                        </span>
-                        <span class="skill">
-                            <img src="images/icons/nodejs.png" alt="Node.js">
-                            Node.js
-                        </span>
-                        <span class="skill">
-                            <img src="images/icons/python.png" alt="Python">
-                            Python
-                        </span>
-                        <span class="skill">
-                            <img src="images/icons/git.png" alt="Git">
-                            Git
-                        </span>
-                        <span class="skill">
-                            <img src="images/icons/mongodb.png" alt="MongoDB">
-                            MongoDB
-                        </span>
-                    </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link" data-tooltip="GitHub">
+                        <img src="img/icons/github.png" alt="GitHub">
+                    </a>
+                    <a href="#" class="social-link" data-tooltip="LinkedIn">
+                        <img src="img/icons/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="#" class="social-link" data-tooltip="Twitter">
+                        <img src="img/icons/twitter.png" alt="Twitter">
+                    </a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="proyectos" class="projects">
-        <div class="section-content container">
-            <h2>Mis Proyectos</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/projects/ecommerce-project.jpg" alt="E-commerce Platform">
-                    </div>
-                    <div class="project-content">
-                        <h3>E-commerce Platform</h3>
-                        <p>Una plataforma de comercio electrónico completa desarrollada con React y Node.js. Incluye sistema de pagos, gestión de inventario y panel de administración.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Ver Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/projects/task-management.jpg" alt="Task Management App">
-                    </div>
-                    <div class="project-content">
-                        <h3>Task Management App</h3>
-                        <p>Aplicación web para gestión de tareas con funcionalidades de drag & drop, colaboración en tiempo real y notificaciones push.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Ver Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/projects/weather-dashboard.jpg" alt="Weather Dashboard">
-                    </div>
-                    <div class="project-content">
-                        <h3>Weather Dashboard</h3>
-                        <p>Dashboard interactivo del clima que muestra pronósticos detallados, mapas meteorológicos y alertas en tiempo real usando APIs externas.</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Ver Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contacto" class="contact">
-        <div class="section-content container">
-            <h2>Contacto</h2>
-            <div class="contact-content">
-                <p>¿Tienes un proyecto en mente? Me encantaría escuchar sobre él y ver cómo podemos trabajar juntos para hacerlo realidad.</p>
-                
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <img src="images/icons/email.png" alt="Email">
-                        <h3>Email</h3>
-                        <p>tu.email@ejemplo.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <img src="images/icons/linkedin.png" alt="LinkedIn">
-                        <h3>LinkedIn</h3>
-                        <p>linkedin.com/in/tu-perfil</p>
-                    </div>
-                    <div class="contact-item">
-                        <img src="images/icons/github.png" alt="GitHub">
-                        <h3>GitHub</h3>
-                        <p>github.com/tu-usuario</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Mi Portfolio. Todos los derechos reservados.</p>
-            <div class="social-links">
-                <a href="#"><img src="images/icons/twitter.png" alt="Twitter"></a>
-                <a href="#"><img src="images/icons/instagram.png" alt="Instagram"></a>
-                <a href="#"><img src="images/icons/facebook.png" alt="Facebook"></a>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript externo enlazado -->
-    <script src="js/javascript.js"></script>
+    <!-- JavaScript -->
+     <script src="js/javascript.js"></script>
 </body>
 </html>
