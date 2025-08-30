@@ -746,8 +746,6 @@ const optimizedScroll = (() => {
     let ticking = false;
     
     function updateScrollEffects() {
-        // Aquí van las funciones que dependen del scroll
-        // Ya implementadas en el código principal
         ticking = false;
     }
     
@@ -760,15 +758,3 @@ const optimizedScroll = (() => {
     
     return requestTick;
 })();
-
-
-
-
-
-
-
-
-
-/* ========================================
-   FIN DEL ARCHIVO JAVASCRIPT
-   ======================================== */
