@@ -1,388 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brandon Gonzaléz | Desarrollador Web</title>
-    <meta name="description" content="Portfolio profesional de Brandon Gonzaléz, desarrollador web especializado en crear experiencias digitales modernas y atractivas.">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portfolio - Juan Pérez</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <!-- ======================== HEADER ======================== -->
-    <header id="header">
-        <nav class="navbar">
-            <div class="nav-container">
-                <!-- Logo -->
-                <div class="nav-logo">
-                    <img src="img/icons/logoportfolio.png" alt="Logo" class="logo-img">
-                    <span>Tu Portfolio</span>
-                </div>
+  <!-- Cursor personalizado -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
 
-                <!-- Menu Hamburguesa -->
-                <div class="hamburger" id="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+  <!-- Header -->
+  <header>
+    <!-- Fondo con partículas -->
+<div id="tsparticles"></div>
+    <nav>
+      <div class="logo">Mi Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#about">Acerca de mí</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
 
-                <!-- Navegación -->
-                <ul class="nav-menu" id="nav-menu">
-                    <li class="nav-item">
-                        <a href="#inicio" class="nav-link">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#acerca" class="nav-link">Acerca de Mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#habilidades" class="nav-link">Habilidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#proyectos" class="nav-link">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contacto" class="nav-link">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+  <main>
+    <!-- Hero -->
+    <section id="inicio" class="hero" data-aos="fade-up">
+      <div class="hero-content">
+        <h1>Juan Pérez</h1>
+        <p class="typed-text">Desarrollador Web Full Stack</p>
+        <a href="#contact" class="btn">Contáctame</a>
+      </div>
+    </section>
 
-    <!-- ======================== MAIN ======================== -->
-    <main>
-        <!-- SECCIÓN INICIO/HERO -->
-        <section id="inicio" class="hero">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <h1 class="hero-title">
-                        Hola, soy <span class="highlight">Brandon Gonzaléz</span>
-                    </h1>
-                    <p class="hero-subtitle">
-                        Desarrollador Web Full Stack especializado en crear experiencias digitales increíbles
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
-                        <a href="#contacto" class="btn btn-secondary">Contactar</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="profile-circle">
-                        <img src="img/profile.png" alt="Tu foto de perfil" class="profile-photo">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN ACERCA DE MÍ -->
-        <section id="acerca" class="about">
-            <div class="container">
-                <h2 class="section-title">Acerca de Mí</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>
-                            Soy un desarrollador web apasionado con más de 3 años de experiencia 
-                            creando aplicaciones web modernas y responsivas. Me especializo en 
-                            tecnologías frontend y backend, siempre buscando las mejores prácticas 
-                            y soluciones innovadoras.
-                        </p>
-                        <p>
-                            Mi enfoque está en crear experiencias de usuario excepcionales, 
-                            código limpio y mantenible, y soluciones que realmente aporten 
-                            valor a los usuarios y empresas.
-                        </p>
-                        <div class="about-info">
-                            <div class="info-item">
-                                <strong>Nombre:</strong> Brandon Gonzaléz
-                            </div>
-                            <div class="info-item">
-                                <strong>Ubicación:</strong> Ciudad de México, México
-                            </div>
-                            <div class="info-item">
-                                <strong>Email:</strong> brandon.gonzalez@ejemplo.com
-                            </div>
-                            <div class="info-item">
-                                <strong>Experiencia:</strong> 3+ años
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-image">
-                        <img src="img/profile.png" alt="Imagen personal" class="about-img">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN HABILIDADES -->
-        <section id="habilidades" class="skills">
-            <div class="container">
-                <h2 class="section-title">Mis Habilidades</h2>
-                <div class="skills-content">
-                    <div class="skills-grid">
-                        <!-- Habilidad 1 -->
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <img src="img/icons/html-5.png" alt="HTML5" class="skill-icon">
-                                <h3>HTML5</h3>
-                                <span class="skill-percentage">90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="90"></div>
-                            </div>
-                        </div>
-
-                        <!-- Habilidad 2 -->
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <img src="img/icons/css-3.png" alt="CSS3" class="skill-icon">
-                                <h3>CSS3</h3>
-                                <span class="skill-percentage">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85"></div>
-                            </div>
-                        </div>
-
-                        <!-- Habilidad 3 -->
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <img src="img/icons/javascript.png" alt="JavaScript" class="skill-icon">
-                                <h3>JavaScript</h3>
-                                <span class="skill-percentage">80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="80"></div>
-                            </div>
-                        </div>
-
-                        <!-- Habilidad 4 -->
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <img src="img/icons/react.png" alt="React" class="skill-icon">
-                                <h3>React</h3>
-                                <span class="skill-percentage">75%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="75"></div>
-                            </div>
-                        </div>
-
-                        <!-- Habilidad 5 -->
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <img src="img/icons/node.js.png" alt="Node.js" class="skill-icon">
-                                <h3>Node.js</h3>
-                                <span class="skill-percentage">70%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="70"></div>
-                            </div>
-                        </div>
-
-                        <!-- Habilidad 6 -->
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <img src="img/icons/python.png" alt="Python" class="skill-icon">
-                                <h3>Python</h3>
-                                <span class="skill-percentage">65%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="65"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN PROYECTOS -->
-        <section id="proyectos" class="projects">
-            <div class="container">
-                <h2 class="section-title">Mis Proyectos</h2>
-                <div class="projects-grid">
-                    <!-- Proyecto 1 -->
-                    <article class="project-card" data-aos="fade-up">
-                        <div class="project-image">
-                            <img src="img/projects/ecommerce-project.jpg" alt="E-commerce Platform">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link" data-tooltip="Ver Demo">
-                                        <i class="icon-eye"></i>
-                                    </a>
-                                    <a href="#" class="project-link" data-tooltip="Ver Código">
-                                        <i class="icon-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>E-commerce Platform</h3>
-                            <p>Plataforma completa de comercio electrónico desarrollada con React y Node.js. 
-                               Incluye sistema de pagos, gestión de inventario y panel de administración.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">MongoDB</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Proyecto 2 -->
-                    <article class="project-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="project-image">
-                            <img src="img/projects/task-management.jpg" alt="Task Management App">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link" data-tooltip="Ver Demo">
-                                        <i class="icon-eye"></i>
-                                    </a>
-                                    <a href="#" class="project-link" data-tooltip="Ver Código">
-                                        <i class="icon-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>Task Management App</h3>
-                            <p>Aplicación para gestión de tareas con funcionalidades de drag & drop, 
-                               colaboración en tiempo real y notificaciones push.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Vue.js</span>
-                                <span class="tech-tag">Firebase</span>
-                                <span class="tech-tag">CSS3</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Proyecto 3 -->
-                    <article class="project-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="project-image">
-                            <img src="img/projects/weather-dashboard.avif" alt="Weather Dashboard">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link" data-tooltip="Ver Demo">
-                                        <i class="icon-eye"></i>
-                                    </a>
-                                    <a href="#" class="project-link" data-tooltip="Ver Código">
-                                        <i class="icon-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>Weather Dashboard</h3>
-                            <p>Dashboard interactivo del clima con pronósticos detallados, 
-                               mapas meteorológicos y alertas en tiempo real.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">API REST</span>
-                                <span class="tech-tag">Chart.js</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN CONTACTO -->
-        <section id="contacto" class="contact">
-            <div class="container">
-                <h2 class="section-title">Contacto</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>¡Trabajemos juntos!</h3>
-                        <p>¿Tienes un proyecto en mente? Me encantaría escuchar sobre él y ver cómo podemos colaborar.</p>
-                        
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <img src="img/icons/logotipo-de-gmail.png" alt="Email" class="contact-icon">
-                                <div class="contact-text">
-                                    <h4>Email</h4>
-                                    <p>brandon.gonzalez@ejemplo.com</p>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <img src="img/icons/logotipo-de-linkedin.png" alt="LinkedIn" class="contact-icon">
-                                <div class="contact-text">
-                                    <h4>LinkedIn</h4>
-                                    <p>linkedin.com/in/brandon-gonzalez</p>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <img src="img/icons/logotipo-de-github.png" alt="GitHub" class="contact-icon">
-                                <div class="contact-text">
-                                    <h4>GitHub</h4>
-                                    <p>github.com/brandon-gonzalez</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- FORMULARIO DE CONTACTO -->
-                    <div class="contact-form">
-                        <form id="contactForm" novalidate>
-                            <div class="form-group">
-                                <label for="nombre">Nombre *</label>
-                                <input type="text" id="nombre" name="nombre" required>
-                                <span class="error-message" id="nombre-error"></span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email">Email *</label>
-                                <input type="email" id="email" name="email" required>
-                                <span class="error-message" id="email-error"></span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="asunto">Asunto *</label>
-                                <input type="text" id="asunto" name="asunto" required>
-                                <span class="error-message" id="asunto-error"></span>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="mensaje">Mensaje *</label>
-                                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-                                <span class="error-message" id="mensaje-error"></span>
-                            </div>
-
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary btn-submit">
-                                    <span class="btn-text">Enviar Mensaje</span>
-                                    <span class="btn-loading">Enviando...</span>
-                                </button>
-                            </div>
-                        </form>
-
-                        <!-- Mensaje de éxito/error -->
-                        <div id="form-message" class="form-message"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- ======================== FOOTER ======================== -->
-    <footer id="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; 2025 Brandon Gonzaléz. Todos los derechos reservados.</p>
-                </div>
-                <div class="footer-social">
-                    <a href="#" class="social-link" data-tooltip="GitHub">
-                        <img src="img/icons/logotipo-de-github.png" alt="GitHub">
-                    </a>
-                    <a href="#" class="social-link" data-tooltip="LinkedIn">
-                        <img src="img/icons/logotipo-de-linkedin.png" alt="LinkedIn">
-                    </a>
-                    <a href="#" class="social-link" data-tooltip="Twitter">
-                        <img src="img/icons/logotipostwiter.png" alt="Twitter">
-                    </a>
-                </div>
-            </div>
+    <!-- Acerca de mí -->
+    <section id="about" class="about" data-aos="fade-right">
+      <h2>Acerca de mí</h2>
+      <div class="about-content">
+        <div class="profile-pic"><img src="img/perfil.png" alt="Foto de perfil de Juan Pérez"></div>
+        <div class="about-text">
+          <p>Soy un desarrollador web apasionado por crear soluciones digitales innovadoras...</p>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <!-- JavaScript -->
-    <script src="js/javascript.js"></script>
+    <!-- Habilidades -->
+    <section id="skills" class="skills">
+      <h2 data-aos="fade-up">Mis Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill-card" data-aos="zoom-in">
+          <h3>HTML & CSS</h3>
+          <div class="progress"><span data-skill="90"></span></div>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+          <h3>JavaScript</h3>
+          <div class="progress"><span data-skill="85"></span></div>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+          <h3>React</h3>
+          <div class="progress"><span data-skill="80"></span></div>
+        </div>
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+          <h3>Node.js</h3>
+          <div class="progress"><span data-skill="75"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="projects" class="projects">
+      <h2 data-aos="fade-up">Mis Proyectos</h2>
+      <div class="projects-grid">
+        <figure class="project-card" data-aos="fade-up">
+          <div class="project-image">E-commerce App</div>
+          <figcaption class="project-content">
+            <h3>Tienda Online</h3>
+            <p>Una aplicación de comercio electrónico completa...</p>
+          </figcaption>
+        </figure>
+        <figure class="project-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="project-image">Task Manager</div>
+          <figcaption class="project-content">
+            <h3>Gestor de Tareas</h3>
+            <p>Aplicación para gestionar tareas y proyectos...</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="contact" data-aos="fade-up">
+      <h2>Contáctame</h2>
+      <form class="contact-form" id="contactForm" novalidate>
+        <input type="text" id="name" name="name" placeholder="Nombre completo *" required>
+        <small class="error" id="nameError"></small>
+
+        <input type="email" id="email" name="email" placeholder="Correo electrónico *" required>
+        <small class="error" id="emailError"></small>
+
+        <input type="text" id="subject" name="subject" placeholder="Asunto *" required>
+        <small class="error" id="subjectError"></small>
+
+        <textarea id="message" name="message" placeholder="Mensaje *" required></textarea>
+        <small class="error" id="messageError"></small>
+
+        <button type="submit">Enviar Mensaje</button>
+        <div class="success" id="successMessage">¡Mensaje enviado correctamente!</div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <ul class="social-links">
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+      <p>&copy; 2024 Juan Pérez. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>

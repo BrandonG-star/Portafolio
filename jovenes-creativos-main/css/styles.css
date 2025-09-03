@@ -1,0 +1,211 @@
+:root {
+  --primary: #00aaff;
+  --secondary: #0088cc;
+  --bg: #0a0a0a;
+  --card-bg: rgba(17, 17, 17, 0.7);
+  --white: #fff;
+}
+
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--white);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 15px 40px;
+  z-index: 1000;
+}
+.logo { font-size: 1.5rem; font-weight: bold; }
+
+/* Nav */
+.nav-links { display: flex; list-style: none; }
+.nav-links li { margin: 0 15px; }
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.nav-links a:hover { color: var(--primary); }
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--bg);
+  position: relative;
+}
+
+/* About Section */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.profile-pic {
+  flex: 0 0 200px;
+  text-align: center;
+}
+
+.profile-pic img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+  box-shadow: 0 0 20px rgba(0, 150, 255, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.profile-pic img:hover {
+  transform: scale(1.05);
+}
+
+.about-text {
+  flex: 1 1 300px;
+  max-width: 600px;
+}
+
+/* Botón */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+.btn:hover {
+  box-shadow: 0 0 15px rgba(0, 150, 255, 0.6);
+  transform: scale(1.05);
+}
+
+/* Skills */
+.skills-grid,
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.skill-card,
+.project-card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+.skill-card:hover,
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 150, 255, 0.3);
+}
+
+/* Progress Bars */
+.progress {
+  background: #222;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: 10px;
+  overflow: hidden;
+}
+.progress span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--primary);
+  border-radius: 10px;
+  transition: width 2s ease;
+}
+
+/* Contacto */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+.contact-form button {
+  background: var(--primary);
+  color: var(--white);
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact-form button:hover { background: var(--secondary); }
+.error { color: #f55; font-size: 0.9rem; display: none; }
+.success { display: none; color: #0f0; margin-top: 10px; }
+
+/* Footer */
+footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.social-links a {
+  color: var(--white);
+  transition: all 0.3s;
+}
+.social-links a:hover {
+  color: var(--primary);
+  transform: scale(1.2) rotate(5deg);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .hamburger { display: flex; flex-direction: column; cursor: pointer; z-index: 1001; }
+  .hamburger span { width: 25px; height: 3px; background: var(--white); margin: 5px 0; transition: all 0.3s ease; }
+  .nav-links { display: none; flex-direction: column; position: absolute; top: 60px; right: 0; left: 0; background: rgba(17, 17, 17, 0.95); padding: 20px; border-radius: 0 0 10px 10px; width: 100%; text-align: center; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); }
+  .nav-links.active { display: flex; }
+  .nav-links li { margin: 15px 0; }
+  .nav-links a { font-size: 1.2rem; display: block; padding: 10px; }
+  
+  /* Animación del hamburger */
+  .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+  .hamburger.active span:nth-child(2) { opacity: 0; }
+  .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
+}
+/* Partículas de fondo */
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* detrás de todo */
+  background: var(--bg);
+}
