@@ -25,11 +25,6 @@ document.addEventListener('click', (e) => {
   }
 });
 
-// Form Validation
-// Variables para el formulario de contacto
-const form = document.getElementById('contactForm');
-const successMessage = document.getElementById('successMessage');
-
 const fields = {
   name: { regex: /^[a-zA-ZÀ-ÿ\s]{3,}$/, error: "Ingresa un nombre válido (mínimo 3 caracteres)" },
   email: { regex: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, error: "Ingresa un email válido" },
@@ -217,9 +212,13 @@ const addTiltEffect = () => {
 // Inicializar efectos de inclinación
 addTiltEffect();
 
-// Configuracion de Pariculas
-if (typeof tsParticles !== 'undefined') {
-  tsParticles.load("tsparticles", {
+// Configuración de Partículas universal (v1 + v2)
+window.addEventListener('load', () => {
+  console.log('Verificando disponibilidad de tsParticles...');
+  if (typeof tsParticles !== "undefined") {
+    console.log('Inicializando tsParticles...');
+    try {
+      tsParticles.load("tsparticles", {
     fpsLimit: 60,
     background: {
       color: { value: "#0a0a0a" }
@@ -237,7 +236,9 @@ if (typeof tsParticles !== 'undefined') {
         animation: {
           enable: true,
           speed: 1,
-          minimumValue: 0.1,
+          // compatibilidad con v1 y v2
+          minimumValue: 0.1, 
+          min: 0.1,
           sync: false
         }
       },
@@ -246,7 +247,9 @@ if (typeof tsParticles !== 'undefined') {
         animation: {
           enable: true,
           speed: 2,
-          minimumValue: 0.5,
+          // compatibilidad con v1 y v2
+          minimumValue: 0.5, 
+          min: 0.5,
           sync: false
         }
       },
@@ -254,7 +257,9 @@ if (typeof tsParticles !== 'undefined') {
         enable: true,
         speed: 1,
         direction: "none",
+        // compatibilidad con v1 y v2
         outModes: { default: "out" },
+        out_mode: "out",
         attract: {
           enable: false,
           rotateX: 600,
@@ -270,7 +275,9 @@ if (typeof tsParticles !== 'undefined') {
       }
     },
     interactivity: {
+      // compatibilidad con v1 y v2
       detectsOn: "canvas",
+      detect_on: "canvas",
       events: {
         onHover: { 
           enable: true, 
@@ -304,8 +311,18 @@ if (typeof tsParticles !== 'undefined') {
       }
     },
     detectRetina: true
-  });
-}
+    }).then(() => {
+        console.log('tsParticles inicializado correctamente');
+      }).catch(error => {
+        console.error('Error al inicializar tsParticles:', error);
+      });
+    } catch (error) {
+      console.error('Error al cargar tsParticles:', error);
+    }
+  } else {
+    console.error('tsParticles no está disponible');
+  }
+});
 
 // Carga diferida de imágenes
 const lazyLoadImages = () => {
@@ -368,7 +385,8 @@ window.addEventListener('scroll', throttle(() => {
 
 console.log('Portfolio loaded successfully! 🚀');
 
-// Obtener el botón de envío
+const form = document.getElementById('contactForm');
+const successMessage = document.getElementById('successMessage');
 const submitBtn = document.getElementById('submitBtn');
 
 form.addEventListener('submit', async (e) => {
@@ -425,3 +443,4 @@ form.addEventListener('submit', async (e) => {
     submitBtn.classList.remove("loading");
   }
 });
+

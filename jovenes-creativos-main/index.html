@@ -3,19 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portfolio - Juan Pérez</title>
+  <title>Mi Portfolio - Brandon Gonzaléz</title>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Cursor personalizado -->
-  <div class="cursor"></div>
-  <div class="cursor-follower"></div>
+  <!-- Particulas Background -->
+  <div id="tsparticles"></div>
 
   <!-- Header -->
   <header>
-    <!-- Fondo con partículas -->
-<div id="tsparticles"></div>
     <nav>
       <div class="logo">Mi Portfolio</div>
       <ul class="nav-links">
@@ -23,6 +21,7 @@
         <li><a href="#about">Acerca de mí</a></li>
         <li><a href="#skills">Habilidades</a></li>
         <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#testimonials">Referencias</a></li>
         <li><a href="#contact">Contacto</a></li>
       </ul>
       <div class="hamburger">
@@ -35,103 +34,304 @@
     <!-- Hero -->
     <section id="inicio" class="hero" data-aos="fade-up">
       <div class="hero-content">
-        <h1>Juan Pérez</h1>
-        <p class="typed-text">Desarrollador Web Full Stack</p>
+        <h1>Brandon Gonzaléz</h1>
+    <p class="typed-text">Desarrollador Web Full Stack main irelia top</p>
         <a href="#contact" class="btn">Contáctame</a>
       </div>
     </section>
 
-    <!-- Acerca de mí -->
+    <!-- Sobre mí -->
     <section id="about" class="about" data-aos="fade-right">
-      <h2>Acerca de mí</h2>
+      <h2>Sobre mí</h2>
       <div class="about-content">
-        <div class="profile-pic"><img src="img/perfil.png" alt="Foto de perfil de Juan Pérez"></div>
+        <div class="profile-pic">
+          <img src="img/perfil.png" alt="Juan Pérez">
+        </div>
         <div class="about-text">
-          <p>Soy un desarrollador web apasionado por crear soluciones digitales innovadoras...</p>
+          <p>Soy un desarrollador web apasionado por crear soluciones digitales innovadoras. Con más de 3 años de experiencia en desarrollo frontend y backend, me especializo en crear aplicaciones web modernas, responsivas y centradas en el usuario.</p>
+          <p>Mi enfoque se basa en escribir código limpio, seguir las mejores prácticas y mantenerme actualizado con las últimas tecnologías del desarrollo web.</p>
         </div>
       </div>
     </section>
 
-    <!-- Habilidades -->
+    <!-- Habilidades (exageradas) -->
     <section id="skills" class="skills">
       <h2 data-aos="fade-up">Mis Habilidades</h2>
       <div class="skills-grid">
-        <div class="skill-card" data-aos="zoom-in">
-          <h3>HTML & CSS</h3>
-          <div class="progress"><span data-skill="90"></span></div>
+        <div class="skill-card" data-aos="zoom-in" data-skill="90">
+          <div class="skill-header">
+            <i class="fab fa-html5 skill-icon"></i>
+            <div class="skill-info">
+              <h3>HTML & CSS</h3>
+              <div class="skill-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="skill-description">Experto en HTML5 semántico y CSS3 avanzado, incluyendo Flexbox, Grid y animaciones.</p>
+          <div class="skill-progress">
+            <div class="progress-bar" data-width="90"></div>
+          </div>
         </div>
-        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
-          <h3>JavaScript</h3>
-          <div class="progress"><span data-skill="85"></span></div>
+        
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100" data-skill="85">
+          <div class="skill-header">
+            <i class="fab fa-js-square skill-icon"></i>
+            <div class="skill-info">
+              <h3>JavaScript</h3>
+              <div class="skill-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="skill-description">Dominio de JavaScript ES6+, manipulación del DOM y programación asíncrona.</p>
+          <div class="skill-progress">
+            <div class="progress-bar" data-width="85"></div>
+          </div>
         </div>
-        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
-          <h3>React</h3>
-          <div class="progress"><span data-skill="80"></span></div>
+        
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200" data-skill="80">
+          <div class="skill-header">
+            <i class="fab fa-react skill-icon"></i>
+            <div class="skill-info">
+              <h3>React</h3>
+              <div class="skill-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="skill-description">Desarrollo de aplicaciones SPA con React, Hooks, Context API y Redux.</p>
+          <div class="skill-progress">
+            <div class="progress-bar" data-width="80"></div>
+          </div>
         </div>
-        <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
-          <h3>Node.js</h3>
-          <div class="progress"><span data-skill="75"></span></div>
+        
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="300" data-skill="75">
+          <div class="skill-header">
+            <i class="fab fa-node-js skill-icon"></i>
+            <div class="skill-info">
+              <h3>Node.js</h3>
+              <div class="skill-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="skill-description">Creación de APIs RESTful, manejo de bases de datos y autenticación JWT.</p>
+          <div class="skill-progress">
+            <div class="progress-bar" data-width="75"></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="400" data-skill="70">
+          <div class="skill-header">
+            <i class="fab fa-python skill-icon"></i>
+            <div class="skill-info">
+              <h3>Python</h3>
+              <div class="skill-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="skill-description">Desarrollo backend con Django y Flask, automatización y análisis de datos.</p>
+          <div class="skill-progress">
+            <div class="progress-bar" data-width="70"></div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="500" data-skill="85">
+          <div class="skill-header">
+            <i class="fas fa-database skill-icon"></i>
+            <div class="skill-info">
+              <h3>Bases de Datos</h3>
+              <div class="skill-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="skill-description">MySQL, PostgreSQL, MongoDB. Diseño y optimización de bases de datos.</p>
+          <div class="skill-progress">
+            <div class="progress-bar" data-width="85"></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Proyectos -->
+    <!-- Mis Proyectos (ficticios jajaja) -->
     <section id="projects" class="projects">
       <h2 data-aos="fade-up">Mis Proyectos</h2>
       <div class="projects-grid">
-        <figure class="project-card" data-aos="fade-up">
-          <div class="project-image">E-commerce App</div>
-          <figcaption class="project-content">
+        <div class="project-card" data-aos="fade-up">
+          <div class="project-image">
+            <img src="img/projects/ecommerce-project.jpg" alt="E-commerce App">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
             <h3>Tienda Online</h3>
-            <p>Una aplicación de comercio electrónico completa...</p>
-          </figcaption>
-        </figure>
-        <figure class="project-card" data-aos="fade-up" data-aos-delay="150">
-          <div class="project-image">Task Manager</div>
-          <figcaption class="project-content">
+            <p>Una aplicación de comercio electrónico completa con carrito de compras, pasarela de pago y panel de administración.</p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="project-image">
+            <img src="img/projects/task-management.jpg" alt="Task Manager">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
             <h3>Gestor de Tareas</h3>
-            <p>Aplicación para gestionar tareas y proyectos...</p>
-          </figcaption>
-        </figure>
+            <p>Aplicación para gestionar tareas y proyectos con funcionalidades de colaboración en tiempo real.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">Socket.io</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-image">
+            <img src="img/projects/weather-dashboard.avif" alt="Weather App">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>App del Clima</h3>
+            <p>Aplicación meteorológica con pronósticos detallados y geolocalización automática.</p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">API REST</span>
+              <span class="tech-tag">CSS3</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Contacto -->
-    <section id="contact" class="contact" data-aos="fade-up">
-      <h2>Contáctame</h2>
-      <form class="contact-form" id="contactForm" novalidate>
-        <input type="text" id="name" name="name" placeholder="Nombre completo *" required>
-        <small class="error" id="nameError"></small>
-
-        <input type="email" id="email" name="email" placeholder="Correo electrónico *" required>
-        <small class="error" id="emailError"></small>
-
-        <input type="text" id="subject" name="subject" placeholder="Asunto *" required>
-        <small class="error" id="subjectError"></small>
-
-        <textarea id="message" name="message" placeholder="Mensaje *" required></textarea>
-        <small class="error" id="messageError"></small>
-
-        <button type="submit">Enviar Mensaje</button>
-        <div class="success" id="successMessage">¡Mensaje enviado correctamente!</div>
-      </form>
+    <!-- Testimonios (de personas que ni existen) -->
+    <section id="testimonials" class="testimonials">
+      <h2 data-aos="fade-up">Referencias y Opiniones</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card" data-aos="fade-up">
+          <i class="fas fa-quote-left testimonial-quote"></i>
+          <p class="testimonial-text">"Brandon es un desarrollador excepcional. Su atención al detalle y capacidad para resolver problemas complejos lo convierten en un activo valioso para cualquier equipo."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MG</div>
+            <div>
+              <strong>María García</strong>
+              <div class="author-role">Project Manager</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="150">
+          <i class="fas fa-quote-left testimonial-quote"></i>
+          <p class="testimonial-text">"Trabajar con Brandon fue una experiencia increíble. Entregó el proyecto antes de tiempo y superó todas nuestras expectativas en términos de calidad y funcionalidad."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">CR</div>
+            <div>
+              <strong>Carlos Rodríguez</strong>
+              <div class="author-role">CEO, TechStart</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-quote-left testimonial-quote"></i>
+          <p class="testimonial-text">"Brandon demostró gran profesionalismo y habilidades técnicas sólidas. Su código es limpio, bien documentado y fácil de mantener."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AL</div>
+            <div>
+              <strong>Ana López</strong>
+              <div class="author-role">Senior Developer</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-  </main>
 
-  <footer>
+  <!-- Contacto -->
+<section id="contact" class="contact" data-aos="fade-up">
+  <h2>Contáctame</h2>
+  <form class="contact-form" id="contactForm" action="https://formspree.io/f/mblaplqq" method="POST">
+    
+    <input type="text" id="name" name="name" placeholder="Nombre completo *" required>
+    <small class="error" id="nameError"></small>
+
+    <input type="email" id="email" name="_replyto" placeholder="Correo electrónico *" required>
+    <small class="error" id="emailError"></small>
+
+    <input type="text" id="subject" name="subject" placeholder="Asunto *" required>
+    <small class="error" id="subjectError"></small>
+
+    <textarea id="message" name="message" placeholder="Mensaje *" rows="5" required></textarea>
+    <small class="error" id="messageError"></small>
+
+    <button type="submit" id="submitBtn">
+      <span class="btn-text"><i class="fas fa-paper-plane"></i> Enviar Mensaje</span>
+      <span class="loader"></span>
+    </button>
+
+    <div class="success" id="successMessage"></div>
+  </form>
+</section>
+
+ <footer>
     <div class="footer-content">
-      <ul class="social-links">
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">Twitter</a></li>
-      </ul>
-      <p>&copy; 2024 Juan Pérez. Todos los derechos reservados.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p>&copy; 2025 Brandon Gonzaléz. Todos los derechos reservados.</p>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
-  <script>AOS.init();</script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
 </body>
 </html>
